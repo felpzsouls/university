@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olá mundo</title>
+</head>
+
+<body>
+    <div style="display: flex; align-items: center; justify-content: center;">
+        <form action="post">
+            <div>
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name" style="margin-top: 10px;">
+            </div>
+            <div>
+                <label for="pwd">Senha:</label>
+                <input type="password" name="pwd" id="pwd" style="margin-top: 10px;">
+            </div>
+            <div style="align-items: center; margin-top: 10px;">
+                <label for="period">Qual seu periodo:</label>
+                <div>
+                    <input type="radio" name="period" id="manha">
+                    <label for="manha">Manhã</label>
+                    <input type="radio" name="period" id="tarde">
+                    <label for="tarde">Tarde</label>
+                </div>
+            </div>
+            <div style="margin-top: 10px;">
+                <label for="curso">Qual seu curso</label>
+                <select name="curso" id="curso">
+                    <option value="">Escolha uma opção</option>
+                    <option value="ads">Analise e desenvolvimento de sistemas</option>
+                    <option value="cc">Ciência da computação</option>
+                </select>
+            </div>
+            <button type="submit" style="margin-top: 10px;">Enviar</button>
+        </form>
+    </div>
+</body>
+
+</html>

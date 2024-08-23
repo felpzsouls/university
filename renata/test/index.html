@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h2>Envie uma mensagem preenchendo o formulário abaixo:</h2>
+    <form method="post" action="form.php">
+        <div>
+            <label for="name">Nome:</label>
+            <input type="text" name="name" id="name" placeholder="sem abreviação*" required>
+        </div>
+        <div>
+            <label for="tel">Telefone:</label>
+            <input type="tel" name="tel" id="tel" placeholder="numero mais DDD">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu E-Mail*" required>
+        </div>
+        <div>
+            <label>Deseja receber novidades?</label>
+
+            <input type="radio" name="novidade" id="sim">
+            <label for="sim">Sim</label>
+            <input type="radio" name="novidade" id="nao">
+            <label for="nao">Não</label>
+        </div>
+        <div>
+            <label for="msg">Digite sua mensagem:</label>
+            <textarea name="mensagem"  id="msg" placeholder="Mensagem*" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
